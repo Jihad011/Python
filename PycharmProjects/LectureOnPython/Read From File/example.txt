@@ -1,0 +1,4 @@
+writing using python
+
+
+ writing using append mode writing using append mode

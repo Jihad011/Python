@@ -1,0 +1,2 @@
+a = 'jihad'
+print(a)

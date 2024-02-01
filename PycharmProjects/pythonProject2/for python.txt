@@ -1,0 +1,243 @@
+Equal==
+Not Equal !=
+Greater than >
+greater than equal >=
+less than <
+less than equal <=
+text:String
+Number:int,float,complex
+Sequence:list,tuple,range
+Boolean:bool
+for :
+addition:+ (3+4=7)
+substraction:-(7-3=4)
+multiplication:*(3*3=9)
+dividation:/(10/3=3.333333333335)
+int dividation://(10//3=3)
+remainder:(10%3=1)
+Python is awesome language:
+'''This is a multiline comment'''
+
+
+This is my first Working Code in PyCharm:
+print("Hello World")
+myVar=2+2
+print('2'+'2')
+c = 10/3    #This will return 3.3333333333333335 
+d = 10//3  #This will return 3
+e = 10+3   #This will return 13
+f = 10-3  #This will return 7
+g=10*3   #This will return 30
+h=10%3  #This will return 1
+print(c)
+print(d)
+print(e)
+print(f)
+print(g)
+print(h)
+
+'''This is a multiline comment'''
+Output:
+
+3.3333333333333335
+3
+13
+7
+30
+1
+Python allows to keep data in mix means in one item can hold every types of variable
+Like:
+List = [23,3,2,'2',"J"]
+print(List[0]) /output will be 23
+print(List[-1]) /output will be J
+List can update,delete,search data at any time
+but truple can't update data 
+Nested List:
+List = [1,[2,3,4,54,5],65,[6,6,76,5,4],90,"Jihad"]
+print(List[1][4])/output will be 5
+List = [1,[2,3,4,54,5],65,[6,60,76,50,45],90,"Jihad"]
+print(List[3][4])/output will be 45
+Additional Explannation: Here the list is List = [1,[2,3,4,54,5],65,[6,60,76,50,45],90,"Jihad"]
+if we represent the list with suitable positioning system:
+then we can write 1=list[0],
+group:2,3,4,54,5=list[1],Additional:for printing 2 :List[1][0] //print(List[1][0])
+65=list[2],
+group:6,60,76,50,45=list[3],//for printing 6:print(List[3][0]
+90=list[4],
+"Jihad"=list[5]
+
+List Manipulation:
+
+List = [1,[2,3,4,54,5],65,[6,60,76,50,45],90,"Jihad"]
+#print(List[1][1])
+List.append(33)
+print(List)
+Output:
+[1, [2, 3, 4, 54, 5], 65, [6, 60, 76, 50, 45], 90, 'Jihad', 33]
+So,we can say that append is nothing but an adding function 
+it adds a value at the end of the list
+
+Insert:
+It is basically an operation that tells we can change a value by determining its position and original value
+for example:List[2,5,4,34,3,55,4,9] is  a list ,Here 5's position is [1]
+so ,if we want to change this value we have to call or declare insert method like this:
+List.insert(1,100) Here 1 represents the index number and 100 represents the exchange value which will replace 5
+from my code:
+List = [1,2,3,4,54,5,65,6,60,76,50,45,90,"Jihad"]
+List.insert(2,33)
+print(List)
+output:
+[1, 2, 33, 3, 4, 54, 5, 65, 6, 60, 76, 50, 45, 90, 'Jihad'] /3  has been  replaced by 33 
+Extend:This will extend the List by adding some values
+Example: let,List=[1,2,3,4,5]
+if we call the operator like this way
+List.extend([6,7,8])
+print(List)
+output:
+[1,2,3,4,5,6,,7,8]
+code:
+List = [1,2,3,4,54,5,65,6,60,76,50,45,90,"Jihad"]
+List.extend(['A','B','C'])
+//Alternative way to add value:
+List = List + ['A','B','C']//
+print(List)
+
+output:
+[1, 2, 3, 4, 54, 5, 65, 6, 60, 76, 50, 45, 90, 'Jihad', 'A', 'B', 'C']
+
+remove:It will remove that value which will be given inside its body
+Example code:
+List = [1,2,3,4,54,5,65,6,60,76,50,45,90,"Jihad"]
+List.remove(90)
+print(List)
+Output:
+[1, 2, 3, 4, 54, 5, 65, 6, 60, 76, 50, 45, 'Jihad']
+Let's see that it has removed 90 from the original List
+Pop:
+It will remove data from the list and the remove data always located at the last postion
+List = [1,2,3,4,54,5,65,6,60,76,50,45,90,"Jihad"]
+List.pop()
+print(List)
+Output:
+[1, 2, 3, 4, 54, 5, 65, 6, 60, 76, 50, 45, 90]
+See! It has removed the last value from the List
+so ,we can say that pop operation is working on the last element of a set or list.
+For removing Positional value,We have to remove but this time,the criteria will be changed 
+We have to pass the list position inside the remove method
+like,Follow the code:
+List = [1,2,3,4,54,5,65,6,60,76,50,45,90,"Jihad"]
+List.remove(List[4]) #54 will be removed from the List
+print(List)
+Output:
+[1, 2, 3, 4, 5, 65, 6, 60, 76, 50, 45, 90, 'Jihad']
+
+Sort:
+It will sort the List Ascending to Descending series.
+like List=[4,2,3,1]
+after sorting,it will be looking like this:[1,2,3,4]
+A simple code:
+List = [1,2,3,4,54,5,65,6,60,76,50,45,90]
+List2 = ['D','B','C','A']
+List.sort()
+List2.sort()
+
+print(List)
+print(List2)
+Output:
+[1, 2, 3, 4, 5, 6, 45, 50, 54, 60, 65, 76, 90]
+['A', 'B', 'C', 'D']
+Indexing:It will find out the value at any position if we give it to it's index number
+List = [1,2,3,4,54,5,65,6,60,76,50,45,90,"Jihad"]
+print(List.index(6))
+output:
+7
+Cout:It will calculate if any number repeat more than one times then it will show us how many times it has been occured
+Code:
+List = [1,2,3,4,54,5,5,6,60,76,50,5,90,"Jihad"]
+print(List.count(5))
+
+Output:
+3
+
+Dictionary:It helps to identify aany value which we want to
+code:
+dictionaryExample = {"name":"Jihad",
+                     "id":"1",
+                     "year":"2nd"}
+print(dictionaryExample['id'])
+output:
+1
+
+	dictionary2:It will print all the attributes:
+dictionaryExample = {"name":"Jihad",
+                     "id":"1",
+                     "year":"2nd"}
+for x in dictionaryExample:
+    print(x)
+output:
+name
+id
+year
+
+DictionaryValues:
+It will print the values :
+dictionaryExample = {"name":"Jihad",
+                     "id":"1",
+                     "year":"2nd"}
+for x in dictionaryExample.values():
+        print(x)
+output:
+Jihad
+1
+2nd
+
+DictionaryItem:It will print attributes and values simontaenously
+dictionaryExample = {"name":"Jihad",
+                     "id":"1",
+                     "year":"2nd"}
+for x in dictionaryExample.items():
+            print(x)
+output:
+('name', 'Jihad')
+('id', '1')
+('year', '2nd')
+del Dictionary:It will del the references values:
+dictionaryExample = {"name":"Jihad",
+                     "id":"1",
+                     "year":"2nd"}
+del dictionaryExample["name"]
+print(dictionaryExample)
+output:
+{'id': '1', 'year': '2nd'}
+
+Read mode read data from txt file:
+f = open('example.txt','r')
+for x in f:
+    print(x)
+#print(f.read())
+output:
+writingg using python
+
+
+write mode replace data :
+f = open('example.txt','w')
+f.write('writingg using python')
+output:My name is Jihad
+
+append mode show all the data:
+
+OS Module:
+os.getcwd() /It will give the current directory for Python
+os.mkdir("NewFolder")/It will create a NewFolder 
+
+
+
+
+
+
+
+
+
+
+
+
